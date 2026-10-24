@@ -156,8 +156,8 @@
 
 .skills-container {
   display: grid;
-  grid-template-columns: 1fr 1.4fr;
-  gap: 50px;
+  grid-template-columns: 1fr;
+  gap: 60px;
   align-items: start;
 }
 
@@ -173,8 +173,8 @@
   gap: 18px;
 }
 
-.language-grid { grid-template-columns: repeat(3, 1fr); }
-.tools-grid { grid-template-columns: repeat(4, 1fr); }
+.language-grid { grid-template-columns: repeat(4, 1fr); }
+.tools-grid { grid-template-columns: repeat(5, 1fr); }
 
 .language-card,
 .tool-card {
