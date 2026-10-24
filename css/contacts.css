@@ -1,0 +1,92 @@
+/* ==========================================================
+   CONTACT PAGE
+========================================================== */
+
+.contact-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 34px 28px;
+  padding: 10px 14px;
+}
+
+.contact-card {
+  --accent: var(--primary);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 26px 32px;
+  text-align: center;
+  background: #fff;
+  border: 2.5px solid var(--plum);
+  border-radius: 34px 28px 36px 30px / 30px 36px 28px 34px;
+  box-shadow: var(--hard);
+  rotate: var(--tilt, 0deg);
+  transition: rotate 0.4s var(--ease-bounce), translate 0.4s var(--ease-bounce), box-shadow 0.3s;
+}
+
+.contact-card:nth-child(1) { --accent: var(--lavender); --tilt: -1deg; }
+.contact-card:nth-child(2) { --accent: var(--blue); --tilt: 0.6deg; }
+.contact-card:nth-child(3) { --accent: var(--primary); --tilt: -0.5deg; }
+.contact-card:nth-child(4) { --accent: var(--yellow); --tilt: 0.8deg; }
+
+.contact-card:hover {
+  rotate: 0deg;
+  translate: 0 -9px;
+  box-shadow: 9px 12px 0 var(--plum);
+}
+
+.contact-card > i {
+  width: 82px;
+  height: 82px;
+  margin-bottom: 20px;
+  display: grid;
+  place-items: center;
+  font-size: 2.1rem;
+  color: var(--plum);
+  background: var(--accent);
+  border: 2.5px solid var(--plum);
+  border-radius: 50%;
+  box-shadow: inset 0 6px 0 rgba(255, 255, 255, 0.45);
+}
+
+.contact-card h3 { font-size: 1.5rem; margin-bottom: 6px; }
+
+.contact-card p {
+  margin-bottom: 22px;
+  color: var(--text-light);
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.contact-card > a {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 22px;
+  font-weight: 700;
+  color: var(--crimson);
+  background: var(--blush);
+  border: 2px solid var(--plum);
+  border-radius: 999px;
+  box-shadow: 3px 3px 0 var(--plum);
+  transition: transform 0.25s var(--ease-bounce), box-shadow 0.25s;
+}
+
+.contact-card > a:hover { transform: translate(-1px, -3px); box-shadow: 5px 6px 0 var(--plum); }
+
+.contact-note {
+  max-width: 560px;
+  margin: 50px auto 0;
+  text-align: center;
+  font-family: var(--font-head);
+  font-size: 1.25rem;
+  color: var(--plum);
+}

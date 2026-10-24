@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>noe's space ⋆˚࿔ | homepage</title>
+    <meta name="description" content="Noella Mariz Beltran — Computer Science student, frontend developer and UI/UX enthusiast. Welcome to noe's space.">
+    <meta name="theme-color" content="#fdf1e4">
+
+    <!-- tab icon: the star from the logo -->
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preload" as="image" href="assets/star-face.webp">
+
+    <script>document.documentElement.classList.add("js", "splashing");</script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- loading screen -->
+    <div class="splash" aria-hidden="true">
+        <div class="splash-core">
+            <div class="splash-star"><img src="assets/star-face.webp" alt=""></div>
+            <div class="splash-name">noe's space</div>
+            <div class="splash-loading"><span>loading</span><i></i><i></i><i></i></div>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main">
+            <a href="index.html" class="logo" aria-label="noe's space — home">
+                <img class="logo-star" src="assets/star-logo.webp" width="46" height="46" alt="">
+                <span>noe</span><span class="logo-mark" aria-hidden="true">⋆˚࿔</span>
+            </a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="work.html">Works</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <button class="hamburger" id="hamburger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="hero-greeting"><i class="fa-solid fa-star" aria-hidden="true"></i> HELLO, I AM</span>
+                <h1 class="hero-title">Noella Mariz Beltran</h1>
+                <div id="hero-typewriter">Computer Science Student</div>
+                <p class="hero-description">
+                    Welcome to my creative space! This is where I share my journey, showcase my projects,
+                    and highlight what I'm learning as I grow in the world of technology.
+                </p>
+                <div class="hero-buttons">
+                    <a href="work.html" class="primary-button">See My Works <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                    <a href="about.html" class="secondary-button">About Me</a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="hero-photo"><img src="images/profile.jpg" alt="Noella"></div>
+            <img src="assets/bee.webp" class="doodle d1" alt="">
+            <img src="assets/bear.webp" class="doodle d2" alt="">
+            <img src="assets/sparkles.webp" class="doodle d3" alt="">
+            <img src="assets/planet-star.webp" class="doodle d4" alt="">
+            <img src="assets/puppy.webp" class="doodle d5" alt="">
+            <img src="assets/strawberry.webp" class="doodle d6" alt="">
+            <img src="assets/star.webp" class="doodle d7" alt="">
+            <img src="assets/winged-heart.webp" class="doodle d8" alt="">
+                <span class="bubble" style="width:54px;height:54px;top:10%;right:-18px;--h:215"></span><span class="bubble" style="width:34px;height:34px;bottom:22%;left:-10px;--h:45"></span><span class="bubble" style="width:78px;height:78px;bottom:-34px;right:22%;--h:335"></span>
+            </div>
+        </section>
+
+    <div class="section-divider" aria-hidden="true">
+        <img src="assets/star-face.webp" alt="" loading="lazy">
+        <img src="assets/flowers.webp" alt="" loading="lazy">
+        <img src="assets/bow.webp" alt="" loading="lazy">
+        <img src="assets/cloud.webp" alt="" loading="lazy">
+        <img src="assets/code.webp" alt="" loading="lazy">
+    </div>
+
+        <section class="featured-projects">
+            <div class="section-title">
+                <h3>TAKE A LOOK AT MY</h3>
+                <h2>Recent Projects</h2>
+            </div>
+
+            <div class="project-grid">
+            <a class="project-card" href="work.html#khit-modal" data-open="khit-modal" data-category="python">
+                <div class="card-media contain" style="--tone:#f9f0ee"><img src="images/khit!.png" alt="khit! preview" loading="lazy"><img class="sticker" src="assets/planet-star.webp" alt=""></div>
+                <div class="card-body">
+                    <span class="tag tag-yellow">Python Game</span>
+                    <h3>khit!</h3>
+                    <p>A Wordle-inspired Python game with XP rewards, unlockable themes, and daily challenges.</p>
+                    <span class="card-more">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                </div>
+            </a>
+            <a class="project-card" href="work.html#kargahan-modal" data-open="kargahan-modal" data-category="uiux">
+                <div class="card-media contain" style="--tone:#ffffff"><img src="images/kargahan%20banner.png" alt="Kargahan preview" loading="lazy"><img class="sticker" src="assets/winged-heart.webp" alt=""></div>
+                <div class="card-body">
+                    <span class="tag tag-pink">UI/UX Design</span>
+                    <h3>Kargahan</h3>
+                    <p>A modern, Filipino-inspired UI for Kargahan, an anonymous social platform about empathy and community support.</p>
+                    <span class="card-more">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                </div>
+            </a>
+            <a class="project-card" href="work.html#borrowbuddy-modal" data-open="borrowbuddy-modal" data-category="java">
+                <div class="card-media contain" style="--tone:#f3e9dc"><img src="images/BORROWBUDDY.png" alt="BorrowBuddy preview" loading="lazy"><img class="sticker" src="assets/star.webp" alt=""></div>
+                <div class="card-body">
+                    <span class="tag tag-lavender">Java Development</span>
+                    <h3>BorrowBuddy</h3>
+                    <p>A desktop Library Management System built with Java Swing.</p>
+                    <span class="card-more">Learn more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                </div>
+            </a>
+            </div>
+        </section>
+
+    <div class="section-divider" aria-hidden="true">
+        <img src="assets/star-face.webp" alt="" loading="lazy">
+        <img src="assets/flowers.webp" alt="" loading="lazy">
+        <img src="assets/bow.webp" alt="" loading="lazy">
+        <img src="assets/cloud.webp" alt="" loading="lazy">
+        <img src="assets/code.webp" alt="" loading="lazy">
+    </div>
+
+        <section class="call-to-action">
+            <div class="cta-content">
+                <img class="cta-doodle star" src="assets/star.webp" alt="">
+                <img class="cta-doodle bear" src="assets/bear.webp" alt="">
+                <h2>Let's create something gwiyeowo together!</h2>
+                <p>Whether you have a project, internship opportunity, or simply want to connect, I'd be happy to hear from you.</p>
+                <a href="contact.html" class="primary-button">Get In Touch <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <div class="footer-logo"><img src="assets/star-logo.webp" alt=""><span>noe ⋆˚࿔</span></div>
+                <p>Creating thoughtful digital experiences through code and creativity.</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="work.html">Works</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Featured Projects</h4>
+                <a href="work.html#khit-modal">khit!</a>
+                <a href="work.html#kargahan-modal">Kargahan</a>
+                <a href="work.html#borrowbuddy-modal">BorrowBuddy</a>
+                <a href="work.html#cc-modal">Coffee Chapters</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="https://github.com/strawbwiees" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/noella-mariz-beltran-884472406?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/outofnoer" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="mailto:noellamarizbeltran01@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © <span data-year>2026</span> Noella Mariz Beltran. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

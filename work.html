@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>noe's space ⋆˚࿔ | works</title>
+    <meta name="description" content="Projects by Noella Mariz Beltran — Python games, Java desktop apps, web applications and UI/UX design.">
+    <meta name="theme-color" content="#fdf1e4">
+
+    <!-- tab icon: the star from the logo -->
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preload" as="image" href="assets/star-face.webp">
+
+    <script>document.documentElement.classList.add("js", "splashing");</script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/works.css">
+</head>
+
+<body>
+    <!-- loading screen -->
+    <div class="splash" aria-hidden="true">
+        <div class="splash-core">
+            <div class="splash-star"><img src="assets/star-face.webp" alt=""></div>
+            <div class="splash-name">noe's space</div>
+            <div class="splash-loading"><span>loading</span><i></i><i></i><i></i></div>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main">
+            <a href="index.html" class="logo" aria-label="noe's space — home">
+                <img class="logo-star" src="assets/star-logo.webp" width="46" height="46" alt="">
+                <span>noe</span><span class="logo-mark" aria-hidden="true">⋆˚࿔</span>
+            </a>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="work.html">Works</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <button class="hamburger" id="hamburger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <img class="banner-doodle l" src="assets/bee.webp" alt="">
+            <img class="banner-doodle r" src="assets/star.webp" alt="">
+            <h1>My Projects</h1>
+            <p>Here are some of the projects I've built throughout my journey as a Computer Science student. Click any project to learn more.</p>
+            <div class="filter-buttons" role="group" aria-label="Filter projects">
+                <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All</button>
+                <button class="filter-btn" type="button" data-filter="java" aria-pressed="false">Java</button>
+                <button class="filter-btn" type="button" data-filter="python" aria-pressed="false">Python</button>
+                <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">Web</button>
+                <button class="filter-btn" type="button" data-filter="uiux" aria-pressed="false">UI/UX</button>
+            </div>
+        </section>
+
+        <section class="projects-section">
+            <div class="projects-grid">
+            <a class="project-card" href="#khit-modal" data-open="khit-modal" data-category="python">
+                <div class="card-media contain" style="--tone:#f9f0ee"><img src="images/khit!.png" alt="khit! preview" loading="lazy"><img class="sticker" src="assets/planet-star.webp" alt=""></div>
+                <div class="card-body">
+                    <span class="tag tag-yellow">Python Game</span>
+                    <h3>khit!</h3>
+                    <p>A Wordle-inspired Python game with XP rewards, unlockable themes, and daily challenges.</p>
+                    <span class="card-more">View details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                </div>
+            </a>
+            <a class="project-card" href="#kargahan-modal" data-open="kargahan-modal" data-category="uiux">
+                <div class="card-media contain" style="--tone:#ffffff"><img src="images/kargahan%20banner.png" alt="Kargahan preview" loading="lazy"><img class="sticker" src="assets/winged-heart.webp" alt=""></div>
+                <div class="card-body">
+                    <span class="tag tag-pink">UI/UX Design</span>
+                    <h3>Kargahan</h3>
+                    <p>A modern, Filipino-inspired UI for Kargahan, an anonymous social platform about empathy and community support.</p>
+                    <span class="card-more">View details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                </div>
+            </a>
+            <a class="project-card" href="#borrowbuddy-modal" data-open="borrowbuddy-modal" data-category="java">
+                <div class="card-media contain" style="--tone:#f3e9dc"><img src="images/BORROWBUDDY.png" alt="BorrowBuddy preview" loading="lazy"><img class="sticker" src="assets/star.webp" alt=""></div>
+                <div class="card-body">
+                    <span class="tag tag-lavender">Java Development</span>
+                    <h3>BorrowBuddy</h3>
+                    <p>A desktop Library Management System built with Java Swing.</p>
+                    <span class="card-more">View details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                </div>
+            </a>
+            <a class="project-card" href="#ht-modal" data-open="ht-modal" data-category="java">
+                <div class="card-media placeholder"><i class="fa-solid fa-code" aria-hidden="true"></i><img class="sticker" src="assets/bee.webp" alt=""></div>
+                <div class="card-body">
+                    <span class="tag tag-lavender">Java Development</span>
+                    <h3>Hotel Transylvania</h3>
+                    <p>A Java hotel booking system for room reservations and guest management.</p>
+                    <span class="card-more">View details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                </div>
+            </a>
+            <a class="project-card" href="#cc-modal" data-open="cc-modal" data-category="web">
+                <div class="card-media contain" style="--tone:#1d1b1a"><img src="images/cc.png" alt="AROMA preview" loading="lazy"><img class="sticker" src="assets/strawberry.webp" alt=""></div>
+                <div class="card-body">
+                    <span class="tag tag-blue">Web Application</span>
+                    <h3>AROMA</h3>
+                    <p>A web-based ordering and inventory system built for the Coffee Chapters study lounge cafe.</p>
+                    <span class="card-more">View details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                </div>
+            </a>
+            </div>
+        </section>
+
+    <div class="modal" id="khit-modal" role="dialog" aria-modal="true" aria-labelledby="khit-modal-title">
+        <div class="modal-content">
+            <div class="modal-top">
+                <button class="close-button" type="button" data-close aria-label="Close"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+            </div>
+            <div class="modal-banner contain" style="--tone:#f9f0ee"><img src="images/khit!.png" alt="khit! — Think, Guess &amp; Remember"></div>
+            <div class="modal-body">
+                <span class="tag tag-yellow">Python Game</span>
+                <h2 id="khit-modal-title">khit!</h2>
+                <p>A Wordle-inspired word puzzle game built with Python, featuring XP rewards, daily bonuses, and color themes.</p>
+
+                <h4 class="modal-label">Technologies used</h4>
+                <div class="tech-stack"><span>Python</span><span>JSON</span></div>
+                    <h4 class="modal-label">Game features</h4>
+                    <ul class="feature-list">
+                        <li>Wordle guessing system</li>
+                        <li>Customizable theme</li>
+                        <li>Choose between different word lengths</li>
+                        <li>XP rewards</li>
+                    </ul>
+                    <h4 class="modal-label">Project gallery</h4>
+                    <div class="gallery">
+                        <div class="shot"><img src="images/khitgame%20(1).png" alt="khit! screenshot" loading="lazy"></div>
+                        <div class="shot"><img src="images/khitgame%20(2).png" alt="khit! screenshot" loading="lazy"></div>
+                        <div class="shot"><img src="images/khitgame%20(3).png" alt="khit! screenshot" loading="lazy"></div>
+                        <div class="shot"><img src="images/khitgame%20(4).png" alt="khit! screenshot" loading="lazy"></div>
+                        <div class="shot"><img src="images/khitgame%20(5).png" alt="khit! screenshot" loading="lazy"></div>
+                    </div>
+                    <div class="modal-buttons">
+                        <a href="https://github.com/strawbwiees/Khit" target="_blank" rel="noopener" class="primary-button">Go to project's repository <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="kargahan-modal" role="dialog" aria-modal="true" aria-labelledby="kargahan-modal-title">
+        <div class="modal-content">
+            <div class="modal-top">
+                <button class="close-button" type="button" data-close aria-label="Close"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+            </div>
+            <div class="modal-banner contain" style="--tone:#ffffff"><img src="images/kargahan%20banner.png" alt="Kargahan"></div>
+            <div class="modal-body">
+                <span class="tag tag-pink">UI/UX Design</span> <span class="tag tag-blue">Web app coming soon</span>
+                <h2 id="kargahan-modal-title">Kargahan</h2>
+                <p>A modern, Filipino-inspired UI for Kargahan, an anonymous social platform focused on emotional expression, empathy, and community support.</p>
+
+                <h4 class="modal-label">Technologies used</h4>
+                <div class="tech-stack"><span>Figma</span><span>UI/UX Design</span></div>
+                    <h4 class="modal-label">Project gallery</h4>
+                    <div class="gallery">
+                        <div class="shot"><img src="images/kargahan1.png" alt="Kargahan screenshot" loading="lazy"></div>
+                        <div class="shot"><img src="images/karagahan2.png" alt="Kargahan screenshot" loading="lazy"></div>
+                        <div class="shot"><img src="images/kargahan3.png" alt="Kargahan screenshot" loading="lazy"></div>
+                    </div>
+                    <div class="modal-buttons">
+                        <a href="https://www.figma.com/design/RDyxwjMhnSCXi6HpmBpjFV/Untitled?node-id=0-1&t=mPM0deMgRDPXT0Fj-1" target="_blank" rel="noopener" class="primary-button">Go to design <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="borrowbuddy-modal" role="dialog" aria-modal="true" aria-labelledby="borrowbuddy-modal-title">
+        <div class="modal-content">
+            <div class="modal-top">
+                <button class="close-button" type="button" data-close aria-label="Close"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+            </div>
+            <div class="modal-banner contain" style="--tone:#f3e9dc"><img src="images/BORROWBUDDY.png" alt="BorrowBuddy"></div>
+            <div class="modal-body">
+                <span class="tag tag-lavender">Java Development</span>
+                <h2 id="borrowbuddy-modal-title">BorrowBuddy</h2>
+                <p>A desktop Library Management System built with Java Swing to improve the efficiency of library operations. It enables librarians to organize book inventories, monitor borrowing and return records and manage library information through a graphical user interface.</p>
+
+                <h4 class="modal-label">Technologies used</h4>
+                <div class="tech-stack"><span>Java (GUI)</span><span>MySQL</span></div>
+                    <h4 class="modal-label">Project gallery</h4>
+                    <div class="gallery">
+                        <div class="shot"><img src="images/BORROWBUDDY1.png" alt="BorrowBuddy screenshot" loading="lazy"></div>
+                        <div class="shot"><img src="images/BORROWBUDDY2.png" alt="BorrowBuddy screenshot" loading="lazy"></div>
+                        <div class="shot"><img src="images/BORROWBUDDY4.png" alt="BorrowBuddy screenshot" loading="lazy"></div>
+                    </div>
+                    <div class="modal-buttons">
+                        <a href="https://github.com/strawbwiees/BorrowBuddy" target="_blank" rel="noopener" class="primary-button">Go to project's repository <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="ht-modal" role="dialog" aria-modal="true" aria-labelledby="ht-modal-title">
+        <div class="modal-content">
+            <div class="modal-top">
+                <button class="close-button" type="button" data-close aria-label="Close"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+            </div>
+            <div class="modal-banner placeholder"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
+            <div class="modal-body">
+                <span class="tag tag-lavender">Java Development</span>
+                <h2 id="ht-modal-title">Hotel Transylvania</h2>
+                <p>A Java-based Hotel Booking System developed to simplify room reservations and guest management. It allows users to book rooms, manage reservations, and organize hotel records through a structured and efficient console-based application.</p>
+
+                <h4 class="modal-label">Technologies used</h4>
+                <div class="tech-stack"><span>Java</span><span>OOP</span></div>
+                    <h4 class="modal-label">Collaborators</h4>
+                    <ul class="collaborators">
+                        <li>Mr. Hans Philip Pasion</li>
+                        <li>Mr. Kirk Stanley Tan</li>
+                    </ul>
+                    <div class="modal-buttons">
+                        <a href="https://github.com/strawbwiees/Hotel-Transylvania-Java" target="_blank" rel="noopener" class="primary-button">Go to project's repository <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="cc-modal" role="dialog" aria-modal="true" aria-labelledby="cc-modal-title">
+        <div class="modal-content">
+            <div class="modal-top">
+                <button class="close-button" type="button" data-close aria-label="Close"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+            </div>
+            <div class="modal-banner contain" style="--tone:#1d1b1a"><img src="images/cc.png" alt="AROMA — Coffee Chapters"></div>
+            <div class="modal-body">
+                <span class="tag tag-blue">Web Application</span>
+                <h2 id="cc-modal-title">AROMA: Administrative Retail Ordering Management System</h2>
+                <p>A web-based platform developed to modernize and digitalize the operations of Coffee Chapters, a study lounge cafe. The system allows customers to browse the cafe menu, place orders online, and make contactless payments. On the admin side, it provides a cashier-facing order management panel and an inventory management module that enables staff to monitor stock levels, process orders efficiently, and generate sales reports.</p>
+
+                <h4 class="modal-label">Technologies used</h4>
+                <div class="tech-stack"><span>HTML</span><span>CSS</span><span>JS</span><span>MySQL</span></div>
+                    <h4 class="modal-label">Collaborators</h4>
+                    <ul class="collaborators">
+                        <li>Mr. Xedric Andrei Viar</li>
+                        <li>Ms. Ashlyn Jam Torres</li>
+                        <li>Mr. Joshua Navidad</li>
+                    </ul>
+                    <h4 class="modal-label">Project gallery</h4>
+                    <div class="gallery">
+                        <div class="shot"><img src="images/cc%20(1).png" alt="AROMA: Administrative Retail Ordering Management System screenshot" loading="lazy"></div>
+                        <div class="shot"><img src="images/cc%20(2).png" alt="AROMA: Administrative Retail Ordering Management System screenshot" loading="lazy"></div>
+                        <div class="shot"><img src="images/cc%20(3).png" alt="AROMA: Administrative Retail Ordering Management System screenshot" loading="lazy"></div>
+                        <div class="shot"><img src="images/cc%20(4).png" alt="AROMA: Administrative Retail Ordering Management System screenshot" loading="lazy"></div>
+                    </div>
+                    <div class="modal-buttons">
+                        <a href="https://strawbwiees.github.io/cc/index.html" target="_blank" rel="noopener" class="primary-button">View project <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <div class="footer-logo"><img src="assets/star-logo.webp" alt=""><span>noe ⋆˚࿔</span></div>
+                <p>Creating thoughtful digital experiences through code and creativity.</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="work.html">Works</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Featured Projects</h4>
+                <a href="work.html#khit-modal">khit!</a>
+                <a href="work.html#kargahan-modal">Kargahan</a>
+                <a href="work.html#borrowbuddy-modal">BorrowBuddy</a>
+                <a href="work.html#cc-modal">Coffee Chapters</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="https://github.com/strawbwiees" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/noella-mariz-beltran-884472406?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/outofnoer" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="mailto:noellamarizbeltran01@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © <span data-year>2026</span> Noella Mariz Beltran. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

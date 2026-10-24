@@ -1,0 +1,46 @@
+/* ==========================================================
+   WORKS PAGE
+========================================================== */
+
+.projects-section {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.filter-btn {
+  padding: 9px 24px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--plum);
+  background: #fff;
+  border: 2.5px solid var(--plum);
+  border-radius: 999px;
+  box-shadow: 3px 3px 0 var(--plum);
+  transition: transform 0.25s var(--ease-bounce), box-shadow 0.25s, background 0.25s;
+}
+
+.filter-btn:hover { transform: translateY(-3px); box-shadow: 4px 6px 0 var(--plum); }
+
+.filter-btn.active {
+  background: linear-gradient(180deg, #f7b6cd, var(--primary-dark));
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 var(--plum);
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: var(--text-light);
+  font-weight: 700;
+}
+
+.collaborators { display: grid; gap: 8px; }
