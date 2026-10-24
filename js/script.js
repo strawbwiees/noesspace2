@@ -178,7 +178,7 @@
   ========================================================== */
   var tw = document.getElementById("hero-typewriter");
   if (tw && !reduceMotion) {
-    var words = ["Computer Science Student", "UI/UX Enthusiast", "Frontend Developer", "Java & Python Developer", "Creative Problem Solver"];
+    var words = ["Computer Science Student", "UI/UX Designer", "Java, Python, C# Developer", "Web Designer", "Game Developer"];
     tw.innerHTML = '<span class="tw-text"></span><span class="caret" aria-hidden="true"></span>';
     var text = tw.firstChild, w = 0, c = 0, deleting = false;
     tw.setAttribute("aria-label", words.join(", "));

@@ -65,6 +65,7 @@
                 <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All</button>
                 <button class="filter-btn" type="button" data-filter="java" aria-pressed="false">Java</button>
                 <button class="filter-btn" type="button" data-filter="python" aria-pressed="false">Python</button>
+                <button class="filter-btn" type="button" data-filter="csharp" aria-pressed="false">C#</button>
                 <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">Web</button>
                 <button class="filter-btn" type="button" data-filter="uiux" aria-pressed="false">UI/UX</button>
             </div>
@@ -72,10 +73,21 @@
 
         <section class="projects-section">
             <div class="projects-grid">
+
+            <a class="project-card" href="#elementalgui-modal" data-open="elementalgui-modal" data-category="csharp">
+                <div class="card-media contain" style="--tone:#f9f0ee"><img src="images/Elemental/logo.png" alt="Elemental" loading="lazy"><img class="sticker" src="assets/planet-star.webp" alt=""></div>
+                <div class="card-body">
+                    <span class="tag tag-lavender">C# Development</span>
+                    <h3>Elemental</h3>
+                    <p>A C# turn-based elemental fighting game featuring unique characters, strategic combat mechanics, special abilities, and an interactive battle interface built with Windows Forms.</p>
+                    <span class="card-more">View details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
+                </div>
+            </a>
+
             <a class="project-card" href="#khit-modal" data-open="khit-modal" data-category="python">
                 <div class="card-media contain" style="--tone:#f9f0ee"><img src="images/khit!.png" alt="khit! preview" loading="lazy"><img class="sticker" src="assets/planet-star.webp" alt=""></div>
                 <div class="card-body">
-                    <span class="tag tag-yellow">Python Game</span>
+                    <span class="tag tag-yellow">Python Development</span>
                     <h3>khit!</h3>
                     <p>A Wordle-inspired Python game with XP rewards, unlockable themes, and daily challenges.</p>
                     <span class="card-more">View details <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>
@@ -120,6 +132,9 @@
             </div>
         </section>
 
+
+    
+
     <div class="modal" id="khit-modal" role="dialog" aria-modal="true" aria-labelledby="khit-modal-title">
         <div class="modal-content">
             <div class="modal-top">
@@ -154,6 +169,53 @@
             </div>
         </div>
     </div>
+
+    <div class="modal" id="elementalgui-modal" role="dialog" aria-modal="true" aria-labelledby="elementalgui-modal-title">
+        <div class="modal-content">
+            <div class="modal-top">
+                <button class="close-button" type="button" data-close aria-label="Close"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+            </div>
+            <div class="modal-banner contain" style="--tone:#f9f0ee"><img src="images/Elemental/logo.png" alt="Elemental"></div>
+            <div class="modal-body">
+                <span class="tag tag-yellow">C# Game</span>
+                <h2 id="elementalgui-modal-title">Elemental</h2>
+                <p>A turn-based battle game developed in C# using Windows Forms,
+                    where players choose elemental characters and battle using basic attacks,
+                    defensive abilities, and powerful special moves. Featuring four unique elements—Fire,
+                    Water, Earth, and Wind—the game combines interactive character selection, health tracking,
+                    turn-based combat, and animated battle effects for an engaging gameplay experience.</p>
+
+                <h4 class="modal-label">Technologies used</h4>
+                <div class="tech-stack"><span>C#</span><span>Windows Forms</span></div>
+                    <h4 class="modal-label">Collaborators</h4>
+                    <ul class="collaborators">
+                        <li>Mr. Carl Justin Mendiola</li>
+                    </ul>
+                    <h4 class="modal-label">Game features</h4>
+                    <ul class="feature-list">
+                        <li>Turn-based combat</li>
+                        <li>Elemental abilities</li>
+                        <li>Character customization</li>
+                        <li>Animated battle effects</li>
+                    </ul>
+                    <h4 class="modal-label">Project gallery</h4>
+                    <div class="gallery">
+                        <div class="shot"><img src="images/Elemental/elemental1.png" alt="Elemental screenshot" loading="lazy"></div>
+                        <div class="shot"><img src="images/Elemental/elemental2.png" alt="Elemental screenshot" loading="lazy"></div>
+                        <div class="shot"><img src="images/Elemental/elemental3.png" alt="Elemental screenshot" loading="lazy"></div>
+                        <div class="shot"><img src="images/Elemental/elemental4.png" alt="Elemental screenshot" loading="lazy"></div>
+                        <div class="shot"><img src="images/Elemental/elemental5.png" alt="Elemental screenshot" loading="lazy"></div>
+                        <div class="shot"><img src="images/Elemental/elemental6.png" alt="Elemental screenshot" loading="lazy"></div>
+                        <div class="shot"><img src="images/Elemental/elemental7.png" alt="Elemental screenshot" loading="lazy"></div>
+                    </div>
+                    <div class="modal-buttons">
+                        <a href="https://github.com/strawbwiees/ElementalGUI" target="_blank" rel="noopener" class="primary-button">Go to project's repository <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="modal" id="kargahan-modal" role="dialog" aria-modal="true" aria-labelledby="kargahan-modal-title">
         <div class="modal-content">
             <div class="modal-top">

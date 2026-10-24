@@ -837,7 +837,7 @@ html.splashing .splash {
   border: 2.5px solid var(--plum);
   border-radius: var(--wobble);
   box-shadow: var(--hard);
-  rotate: var(--tilt);
+  rotate: 0deg;
   cursor: pointer;
   transition: rotate 0.4s var(--ease-bounce), translate 0.4s var(--ease-bounce), box-shadow 0.3s ease;
 }
@@ -848,7 +848,7 @@ html.splashing .splash {
 
 .project-card:hover,
 .project-card:focus-visible {
-  rotate: 0deg;
+  rotate: var(--tilt);
   translate: 0 -9px;
   box-shadow: 9px 12px 0 var(--plum);
 }
